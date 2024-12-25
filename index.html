@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <div id="top"></div>
     <header>
         <div class="marquee">
-            <h3>Work in Progress. Come back sometime...</h3>
+            <div class="track">
+                <div class="content">
+                    <span id="duplicate">
+                        <h3>Work in Progress. Coming soon, slowly but surely...</h3>
+                    </span>
+                </div>
+            </div>
         </div>
         <section>
-            <img src="./img/tmp-logo.png" alt="" id="hero-logo" style="width: 640px; display: block; margin: 0 auto; max-width: 100%;">
+            <img src="./img/tmp-logo.png" alt="" id="hero-logo">
             <h1 id="hero-title">
                 cklx.art
             </h1>
@@ -26,11 +33,11 @@
         </section>
         <section>
             <h2>find me elsewhere!</h2>
-            <ul>
-                <li><a href="https://twitter.com/cklxart">Twitter</a></li>
-                <li><a href="https://bluesky.com/cklxart">BlueSky</a></li>
-                <li><a href="https://www.pixiv.com/cklx">Pixiv</a></li>
-                <li><a href="https://www.deviantart.com/cklx">DeviantArt</a></li>
+            <ul id="social-links">
+                <li><a href="https://twitter.com/CKLX_622">Twitter</a></li>
+                <li><a href="https://bsky.app/profile/cklx.bsky.social">BlueSky</a></li>
+                <li><a href="https://www.pixiv.net/en/users/41785286">Pixiv</a></li>
+                <li><a href="https://www.deviantart.com/artbox64">DeviantArt</a></li>
                 <li><a href="javascript:void(0);">More</a></li>
             </ul>
         </section>
@@ -38,7 +45,23 @@
             <h2>why this site?</h2>
             <p>I just want to have a website where everything links back to here. Kinda like a central hub&#47;directory of where I can be found.</p>
         </section>
+        <section>
+            <h2>why just this page, instead of the full one?</h2>
+            <p>I have most of the full website built, right now just figuring out the best place I can host them (they're currently hosted locally on my PC)</p>
+        </section>
     </main>
 
+    <footer>
+        <section><div><img src="./img/btn-cklx 2.png" alt=""></div>
+            <div>&copy;2025</div>
+            <a href="#top">Back to top</a>
+        </section>
+    </footer>
+    <script>
+        // Duplicate the marquee text, for a seamless loop
+        const node = document.getElementById("duplicate");
+        const clone = node.cloneNode(true);
+        document.getElementById("duplicate").parentNode.appendChild(clone);
+    </script>
 </body>
 </html>
